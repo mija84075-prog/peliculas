@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cine Público — Clásicos gratis</title><meta name="description" content="Catálogo de cine clásico de dominio público y fuentes autorizadas.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav"><a class="brand" href="#">CINE<span>PÚBLICO</span></a><div class="navlinks"><a href="#catalogo">Películas</a><a href="#fuentes">Fuentes</a><button id="favNav">♥ Favoritos <b id="favCount">0</b></button></div></header>
+<section class="hero"><div class="hero-bg"></div><div class="hero-copy"><div class="kicker">CINE CLÁSICO · GRATIS</div><h1>Historias que<br><i>nunca pasan de moda.</i></h1><p>Explora películas históricas disponibles gratuitamente desde archivos y colecciones autorizadas.</p><div class="search"><span>⌕</span><input id="search" placeholder="Buscar películas, años, géneros..." aria-label="Buscar"></div></div></section>
+<main id="catalogo">
+<section class="notice"><b>⚖️ Derechos</b><span>El catálogo enlaza a fuentes institucionales y archivos. Comprueba la licencia de la copia concreta antes de redistribuir, editar o monetizar una versión.</span></section>
+<section class="shelf"><div class="shelf-head"><div><small>COLECCIÓN</small><h2>Destacadas</h2></div><div class="filters" id="filters"><button class="active" data-filter="all">Todas</button><button data-filter="Mudo">Mudas</button><button data-filter="Animación">Animación</button><button data-filter="Documental">Documentales</button><button data-filter="Western">Western</button><button data-filter="Noir">Noir</button></div></div><div class="row" id="row"></div></section>
+<section class="shelf"><div class="shelf-head"><div><small>PARA DESCUBRIR</small><h2>Todo el catálogo</h2></div><span id="count" class="count"></span></div><div class="grid" id="grid"></div></section>
+<section class="about" id="fuentes"><div><small>FUENTES</small><h2>Una biblioteca, no un sitio de piratería.</h2><p>La Library of Congress mantiene una selección de películas de dominio público y también ofrece enlaces aprobados para otras obras del National Film Registry. Internet Archive permite películas que sus responsables puedan publicar legalmente, y recomienda comprobar el estado de derechos de cada título.</p></div><div class="source-links"><a href="https://www.loc.gov/free-to-use/public-domain-films-from-the-national-film-registry/" target="_blank">Library of Congress →</a><a href="https://archive.org/details/feature_films" target="_blank">Internet Archive →</a></div></section>
+</main>
+<footer><span>© 2026 Cine Público</span><span>Catálogo independiente · Fuentes enlazadas</span></footer>
+<div id="modal" class="modal"><div class="modal-card"><button id="close">×</button><div id="modalPoster"></div><div class="modal-info"><small id="modalTag"></small><h2 id="modalTitle"></h2><p id="modalDesc"></p><div class="modal-actions"><a id="modalSource" target="_blank" class="play">Abrir fuente ▶</a><button id="modalFav" class="outline">♡ Favorito</button></div></div></div></div>
+<script src="app.js"></script>
+</body></html>
